@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="font-['Roboto'] bg-slate-900 ">
+    <main class=" my-10">
+        <div class="bg-slate-700 mx-auto w-11/12 md:w-3/4 text-slate-100 px-5 md:px-10 py-5 md:py-10 rounded-lg">
+            <div class="">
+                <h1 id="title" class="text-center text-4xl pb-3">Encuesta de Usuarios</h1>
+                <p id="description" class="pt-5 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur inventore iure earum. Praesentium laborum voluptas dolore quo dolorum consequuntur cupiditate dolor totam, debitis id veritatis deleniti repellat, architecto maiores modi!</p>
+                <p class="text-center italic pb-5">Las opciones marcadas con un "<span class="font-blod text-red-500">*</span>" son obligatorias.</p>
+            </div>
+            <form action="" id="survey-form" class="block ">
+                <div class="pb-4">
+                    <label for="name" id="name-label" class="font-medium text-lg">Nombres<span class="text-red-500">*</span></label>
+                    <input type="text" name="name" id="name" placeholder="Nombres" required class="disabled:opacity-75 rounded-md px-2 py-2 w-full 500"> 
+                </div>
+                <div class="pb-4">
+                    <label for="lastname" class="font-medium text-lg">Apellidos<span class="text-red-500">*</span></label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Apellidos" required class="disabled:opacity-75 rounded-md px-2 py-2 w-full 500">
+                </div>
+                <div class="pb-4">
+                    <label for="email" id="email-label" class="font-medium text-lg">Correo<span class="text-red-500">*</span></label>
+                    <input type="email" name="email" id="email" placeholder="Correo" required class="disabled:opacity-75 rounded-md px-2 py-2 w-full 500">
+                </div>
+                <div class="pb-4">
+                    <label for="age" id="number-label" class="font-medium text-lg">Edad<span class="text-red-500">*</span></label>
+                    <input type="number" name="age" id="number" min="18" max="99" placeholder="Edad" class="disabled:opacity-75 rounded-md px-2 py-2 w-full 500">
+                </div>
+                <div id="dropdown" class="pb-4">
+                    <p class="font-medium text-lg">Ocupación<span class="text-red-500">*</span></p>
+                    <select name="" id="" class="disabled:opacity-75 rounded-md px-2 py-2  w-full text-slate-500">
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="empleado">Empleado</option>
+                        <option value="desempleado">Desempleado</option>
+                        <option value="hogar">Ama de Casa</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="pb-4">
+                    <p class="font-medium text-lg pb-3">Gustos Musicales</p>
+                        <div class="text-sm">
+                            <input type="checkbox" name="gustos" id="gustos" value="Rock">
+                            <label for="gustos">Rock</label>
+                        </div>
+                        <div class="text-sm">
+                            <input type="checkbox" name="gustos" id="gustos" value="Pop">
+                            <label for="gustos">Pop</label>
+                        </div>
+                        <div class="text-sm">
+                            <input type="checkbox" name="gustos" id="gustos" value="Reggae">
+                            <label for="gustos">Reggae</label>
+                        </div>
+                        <div class="text-sm">
+                            <input type="checkbox" name="gustos" id="gustos" value="Metal">
+                            <label for="gustos">Metal</label>
+                        </div>
+                        <div class="text-sm">
+                            <input type="checkbox" name="gustos" id="gustos" value="Jazz">
+                            <label for="gustos">Jazz</label>
+                        </div>
+                        <div class="text-sm">
+                            <input type="checkbox" name="gustos" id="gustos" value="Cumbia">
+                            <label for="gustos">Cumbia</label>
+                        </div>
+                        <div class="text-sm">
+                            <input type="checkbox" name="gustos" id="gustos" value="Reggaeton">
+                            <label for="gustos">Reggaeton</label>
+                        </div>
+                        <div class="text-sm">
+                            <input type="checkbox" name="gustos" id="gustos" value="Salsa">
+                            <label for="gustos">Salsa</label>
+                        </div>
+                        <div class="text-sm">
+                            <input type="checkbox" name="gustos" id="gustos" value="Bachata">
+                            <label for="gustos">Bachata</label>
+                        </div>
+                </div>    
+                <div class="pb-4">
+                    <p class="font-medium text-lg pb-3">Nos recomendarias?</p>
+                    <div class="text-sm">
+                        <input type="radio" name="recomendarias" id="recomendarias" value="Definitivamente" checked>
+                        <label for="recomendarias" >Definitivamente</label>
+                    </div>
+                    <div class="text-sm">
+                        <input type="radio" name="recomendarias" id="recomendarias" value="Tal vez">
+                        <label for="recomendarias">Tal vez</label>
+                    </div>
+                    <div class="text-sm">
+                        <input type="radio" name="recomendarias" id="recomendarias" value="No">
+                        <label for="recomendarias">No</label>
+                    </div>
+                </div>
+                <div class="pb-4">
+                    <label for="comentarios" class="font-medium text-lg">Comentarios</label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" class="rounded-md px-2 py-2  w-full text-slate-600 mt-3"></textarea>
+                </div>
+                <div class="flex justify-center mt-6">
+                    <button type="submit" id="submit" class="bg-slate-900 shadow-lg shadow-slate-900/50 py-2 px-3 rounded-md">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="text-slate-100 mx-auto w-11/12 md:w-3/4 mt-10 text-center">
+            <p>Creado por <a href="https://github.com/mundevux" target="_blank">MundevUX</a>🤍</p>
+            <p>Proyecto de <a href="https://www.freecodecamp.org/espanol/learn/responsive-web-design/" target="_blank" rel="noopener noreferrer">Diseño Web Responsivo</a> de <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></p>
+        </div>
+    </main> 
+</body>
+</html>
